@@ -1,0 +1,30 @@
+canvas {
+  border: 1px solid black;
+}
+.invisible {
+  display: none;
+}
+.text-center {
+  text-align: center;
+}
+div {
+  margin: 10px;
+}
+.center-block {
+  display: block;
+  margin: auto;
+}
+label {
+  padding-right: 10px;
+  width: 35%;
+  vertical-align: top;
+  font: 22px 'Lucida Grande', sans-serif;
+  background-color: rgba(51, 255, 204, 0.7);
+}
+.theCanvas {
+  border: 20px solid rgba(51, 255, 204, 0.7);;
+}
+.forClick{
+  width: 70px;
+  background-color: rgba(51, 255, 204, 0.7);
+}

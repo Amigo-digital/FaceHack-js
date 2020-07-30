@@ -1,0 +1,114 @@
+body {
+  font: 22px/30px Helvetica, Arial, sans-serif;
+}
+
+header{
+  height: 80px;
+  /*opacity: 0.7;
+  filter: alpha(Opacity=70); */
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.mainField {
+  padding-top: 30px;
+
+  height: 300px;
+  width: 55%;
+  background-color: white;
+  opacity: 0.9;
+/*  filter: alpha(Opacity=70); */
+}
+
+#movie {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+a {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(51, 255, 204, 0.5);;
+  transition: .3s;
+}
+a:hover {
+  background: #33FFCC;
+  box-shadow: 0 15px 20px rgba(46,229,157,.4);
+  color: white;
+  transform: translateY(-7px);
+}
+form {
+  height: 300px;
+  width: 400px;
+}
+input {
+  width: 350px;
+  height: 50px;
+  margin: 10 10 10 0;
+  text-align: center;
+  box-shadow:  0px 2px 3px rgba(51, 255, 204, 0.5);;
+}
+textarea {
+  height: 100px;
+  width: 350px;
+}
+.lk {
+  border: 1px solid black;  
+}
+.littleHead {
+  display: flex;
+  justify-content: space-between;
+}
+.kabinet {
+  width: 180px;
+  height: 75px;
+  line-height: 75px;
+}
+.kabinet:hover {
+  background: rgba(248,217,89);
+  box-shadow: 0 15px 20px rgba(4, 24, 16, 0.4);
+  color: white;
+}
+.centerPage {
+  margin: 0 auto;
+}
+.logForm {
+  padding-left: 40px;
+  padding-top: 60px;
+  border: 30px solid rgba(51, 255, 204, 0.3);
+  margin-left: 81px;
+}
+
+.regForm {
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  border: 30px solid rgba(51, 255, 204, 0.3);
+  margin-left: 81px;
+}
+.theCanvas {
+  margin-left: 350px;
+}
+.niceSee{
+  font-size: 36px;
+  color: rgba(51, 255, 204, 0.7);
+}

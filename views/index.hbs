@@ -1,0 +1,49 @@
+
+<!--  <div class = "mainField">
+  <div class = "littleHead"> 
+  
+  </div>
+  </div>
+  <hr>
+    <ul>
+    </ul>
+  </div> -->
+{{#if user}}
+<video autoplay muted loop id="movie">
+    <source src="/video/webb.mp4" type="video/mp4">
+  </video>
+
+  <div id="container">
+    <canvas class="theCanvas" id="canvasOutput" width=420 height=340></canvas>
+  </div>
+  <div class="text-center">
+    <input type="checkbox" id="face" class ="forClick" name="classifier" value="face" checked>
+    <label for="face">face</label>
+    <input type="checkbox" id="eye" class ="forClick" name="cascade" value="eye">
+    <label for="eye">eye</label>
+  </div>
+  <div class="invisible">
+    <video id="video" class="hidden">Your browser does not support the video tag.</video>
+  </div>
+  <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js"></script>
+  <script>
+    var Module = {
+       wasmBinaryFile: 'https://huningxin.github.io/opencv.js/build/wasm/opencv_js.wasm',
+      preRun: [function() {
+        Module.FS_createPreloadedFile('/', 'haarcascade_eye.xml', 'https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_eye.xml', true, false);
+        Module.FS_createPreloadedFile('/', 'haarcascade_frontalface_default.xml', 'https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_frontalface_default.xml', true, false);
+        Module.FS_createPreloadedFile('/', 'haarcascade_profileface.xml', 'https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/haarcascade_profileface.xml', true, false);
+      }],
+      _main: function() {opencvIsReady();}
+    };
+  </script>
+  <script src="https://huningxin.github.io/opencv.js/build/wasm/opencv.js"></script>
+
+
+{{else}}
+<video autoplay muted loop id="movie">
+    <source src="/video/deep.mp4" type="video/mp4">
+  </video>
+{{/if}}
